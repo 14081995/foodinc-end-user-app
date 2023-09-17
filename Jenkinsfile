@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stages('Source'){
+        stage('Source'){
             steps {
                 // Get code from a GitHub repository
                 git "https://github.com/14081995/foodinc-end-user-app"
@@ -11,7 +11,7 @@ pipeline {
             }
         }
 
-        stages('Test'){
+        stage('Test'){
             steps{
                 //Run Cypress to Execute the space file for unit testing
                 sh "npm run cypress:run"
