@@ -13,7 +13,7 @@ pipeline {
 
         stage('Test'){
             steps{
-                //Run Cypress to Execute the space file for unit testing
+                //Run Cypress to Execute the space file for unit Testing
                 sh "npm run cypress:run"
                 echo 'Test Stage Finished'
             }  
