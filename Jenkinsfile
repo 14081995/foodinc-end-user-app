@@ -7,7 +7,7 @@ pipeline {
                 git "https://github.com/14081995/foodinc-end-user-app"
                 // Run npm install to install node modules
                 sh "npm install"
-                echo "Source Stage Finished"
+                echo "Source stage Finished"
             }
         }
 
